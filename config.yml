@@ -14,7 +14,9 @@ notifications:
     - name: express_listener
       disabled: false
       url: http://registry:8080
-      headers: null
+      headers:
+        Accept:
+          - text/plain
       timeout: 5000
       threshold: 5
       backoff: 1000
