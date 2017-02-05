@@ -9,6 +9,16 @@ http:
   addr: :5000
   headers:
     X-Content-Type-Options: [nosniff]
+notifications:
+  endpoints:
+    - name: express_listener
+      disabled: false
+      url: localhost:8080
+      headers:
+        Content-Type: application/json
+      timeout: 500
+      threshold: 5
+      backoff: 1000
 health:
   storagedriver:
     enabled: true
