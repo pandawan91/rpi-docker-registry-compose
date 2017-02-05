@@ -6,7 +6,7 @@ storage:
   filesystem:
     rootdirectory: /var/lib/docker/registry
 http:
-  addr: :5001
+  addr: :5000
   headers:
     X-Content-Type-Options: [nosniff]
 health:
