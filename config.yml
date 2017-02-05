@@ -14,9 +14,7 @@ notifications:
     - name: express_listener
       disabled: false
       url: http://registry:8080
-      headers:
-        Content-Type:
-          - application/vnd.docker.distribution.events.v1+json
+      headers: null
       timeout: 500
       threshold: 5
       backoff: 1000
