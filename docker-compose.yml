@@ -6,7 +6,7 @@ services:
       - /var/lib/docker/registry
     command: "true"
   cache:
-    image: hypriot/redis
+    image: hypriot/rpi-redis
   backend:
     image: pandawan1991/rpi-docker-registry
     ports:
