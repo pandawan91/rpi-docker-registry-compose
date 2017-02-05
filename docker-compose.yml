@@ -3,7 +3,7 @@ services:
   storage:
     image: hypriot/armhf-busybox
     volumes:
-      - /var/lib/docker/registry
+      - /var/lib
       - ./config.yml:/etc/docker/registry/config.yml
   cache:
     image: hypriot/rpi-redis
@@ -18,7 +18,7 @@ services:
       - storage
     environment:
       SETTINGS_FLAVOR: local
-      STORAGE_PATH: /var/lib/docker/registry
+      STORAGE_PATH: /var/lib
       SEARCH_BACKEND: sqlalchemy
       CACHE_REDIS_HOST: cache
       CACHE_REDIS_PORT: 6379
