@@ -4,7 +4,7 @@ services:
     image: hypriot/armhf-busybox
     volumes:
       - /var/lib/docker/registry
-    command: true
+    command: "true"
   cache:
     image: hypriot/redis
   backend:
