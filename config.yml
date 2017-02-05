@@ -18,6 +18,8 @@ notifications:
       timeout: 500
       threshold: 5
       backoff: 1000
+      ignoredmediatypes:
+        - application/octet-stream
 health:
   storagedriver:
     enabled: true
