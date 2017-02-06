@@ -17,6 +17,8 @@ services:
     links:
       - cache
       - storage
+    networks:
+      - outside
     volumes_from:
       - storage
     environment:
@@ -27,3 +29,6 @@ services:
       CACHE_REDIS_PORT: 6379
       CACHE_LRU_REDIS_HOST: cache
       CACHE_LRU_REDIS_PORT: 6379
+networks:
+  outside:
+    external: true
