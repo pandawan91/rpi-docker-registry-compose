@@ -17,7 +17,7 @@ notifications:
       headers:
         Accept:
           - text/plain
-      timeout: 5000
+      timeout: 5000000
       threshold: 5
       backoff: 1000
       ignoredmediatypes:
