@@ -1,5 +1,9 @@
 version: '2.0'
 services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
   backend:
     image: pandawan1991/rpi-docker-registry
     restart: always
